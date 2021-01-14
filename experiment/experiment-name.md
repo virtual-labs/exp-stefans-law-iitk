@@ -1,1 +1,1 @@
-## <!-- Experiment Name -->
+## Verification of Stefan’s law 
