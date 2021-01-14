@@ -1,1 +1,1 @@
-## Verification of Stefan’s law 
+To Verify Stefan’s law 
