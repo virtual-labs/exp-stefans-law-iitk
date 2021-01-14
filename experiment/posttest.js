@@ -90,26 +90,37 @@
 
   const myQuestions = [
     {
-      question: "This is question 1?",  ///// Write the question inside double quotes
+      question: "The value of the current in the filament at T=800 K when applied potential difference is 5V:",  ///// Write the question inside double quotes
       answers: {
-        a: "Option 1",                  ///// Write the option 1 inside double quotes
-        b: "Option 2",                  ///// Write the option 2 inside double quotes
-        c: "Option 3",                  ///// Write the option 3 inside double quotes
-        d: "Option 4"                   ///// Write the option 4 inside double quotes
+        a: "0.2 A",                  ///// Write the option 1 inside double quotes
+        b: "0.4 A",                  ///// Write the option 2 inside double quotes
+        c: "0.6A",                  ///// Write the option 3 inside double quotes
+        d: "0.8A"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
     {
-      question: "This is question 2?",  ///// Write the question inside double quotes
+      question: "Resistance of any conductor _______________ with increase in temperature",  ///// Write the question inside double quotes
       answers: {
-        a: "Option 1",                  ///// Write the option 1 inside double quotes
-        b: "Option 2",                  ///// Write the option 2 inside double quotes
-        c: "Option 3",                  ///// Write the option 3 inside double quotes
-        d: "Option 4"                   ///// Write the option 4 inside double quotes
+        a: "Increases",                  ///// Write the option 1 inside double quotes
+        b: "decreases",                  ///// Write the option 2 inside double quotes
+        c: "remains constant",                  ///// Write the option 3 inside double quotes
+        d: "none of these"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
-    },                                  ///// To add more questions, copy the section below 
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    },   
+    
+     {
+      question: "Keeping Temperature constant how the rate of energy emission from any body depends on increasing its surface area?",  ///// Write the question inside double quotes
+      answers: {
+        a: "Increases",                  ///// Write the option 1 inside double quotes
+        b: "decreases",                  ///// Write the option 2 inside double quotes
+        c: "remains constant",                  ///// Write the option 3 inside double quotes
+        d: "none of these"                   ///// Write the option 4 inside double quotes
+      },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    },///// To add more questions, copy the section below 
     									                  ///// this line
 
 
