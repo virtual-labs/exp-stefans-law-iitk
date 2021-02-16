@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOTcamp_simulator</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="graph.ob.js"></script>
+    <script src="graph_use.ob.js"></script>
+    <script src="graph_use2.ob.js"></script>
+    <link rel="stylesheet" href="boot_css.css">
+
+   // this script is for poping the question when power button is click
+    <script>
+        function main() {
+            $(function() {
+                $( "#dialog" ).dialog();
+            });
+        }
+        function fun1() {
+            alert('Right answer!!!');
+            setColor.style.backgroundColor='#4CAF50';
+            setColor.style.color='white';
+            setColor.style.fontSize='bold';
+            document.getElementById('setColor').value="POWER IS ON";
+        }
+        function fun2() {
+            alert('Answer Is: Image1');
+        }
+        function fun3() {
+            alert('Answer Is: Image1');
+        }
+        function fun4() {
+            alert('Answer Is: Image1');
+        }
+
+    </script>
+</head>
+
+<style>
+    // for styling the table
+    table,th,td{
+        border: 3px solid gray;
+        border-collapse: collapse;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+<div id="block">
+     // div for digital voltmeter and ammeter
+    <div>
+        <h1 style="background-color: grey;color: white">VERIFICATION OF STEFAN'S LAW</h1>
+        <table width="100%" >
+            <tr >
+                <td><h2 style="margin-left: 1px">VoltMeter (V)</h2>
+                    <h4  id="volt"></h4>
+                </td>
+                <td><h2 style="margin-left: -20px">Ammeter (mA)</h2>
+                    <h4 id="ammeter"></h4>
+                </td>
+            </tr>
+        </table>
+    </div>
+        //
+            <div style="float: left" class="left">
+                <div class="slidecontainer" >
+
+                    <h4>VOLTAGE </h4>
+                    <span style="color: red;">0</span><input type="range" min="0" max="15" value="0" class="slider1" id="slider"><span style="color: red;">14</span>
+
+
+                <a class="button"  type="button" onclick="abc()" >
+                    <p style="background-color: lightgreen;text-align:center;padding: 1px ;
+                margin: 10px 0 0 0;cursor: pointer;
+                width: 70px;height: 25px;border-radius: 5px;color: white">SET</p></a>
+                </div>
+                <br><br>
+
+                <div>
+                    <input type="button" value="ENABLE POWER"
+                           style="width: 130px;height: 50px;margin-left: 110px;border-radius: 20px;border: none;background-color: #ca2222;color: white;font-size: 14px;font-weight: bold"
+                           id="setColor" onclick="main()">
+                    <div id="dialog" title="Among the following which Graph is correctly plotted for LogP and LogT " style="display: none">
+                        <p>Among the following which Graph is correctly plotted for LogP and LogT</p>
+                        <img src="img/quesimg.jpg" width="300" height="300"  >
+                        <p>Options:</p>
+                        <input style="margin-left:15px;background-color: lightblue;font-weight:bold;height:22px;font-size:10px;border: none" type="button" value="Image1" id="ans1" onclick="fun1()">
+                        <input style="background-color: lightblue;font-weight:bold;font-size:10px;height:22px;border: none" type="button" value="Image2" id="ans2" onclick="fun2()">
+                        <input style="background-color: lightblue;font-weight:bold;font-size:10px;height:22px;border: none" type="button" value="Image3" id="ans3" onclick="fun3()">
+                        <input  style="background-color: lightblue;font-weight:bold;font-size:10px;height:22px;border: none"  type="button" value="Image4" id="ans4" onclick="fun4()">
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <canvas id="mycanvas" style="border: 2px solid red ;border-radius: 15px;
+                margin: 60px 0 0 30px" width="400" height="260"></canvas>
+                <div style="margin-left: 315px">
+                    <input type="button" value="Select_VoltMeter" onclick="main1()">
+                    <input type="button" value="Select_Ammeter" onclick="main2()">
+                    <input type="button" value="Select_Bulb" onclick="main3()">
+                    <input type="button" value="Select_Battery" onclick="main4()">
+                    <input type="button" value="Connect_Bulb_to_Voltmeter" onclick="main5()">
+                    <input type="button" value="Complete_connections" onclick="main6();" />
+                </div>
+
+
+
+                <img src="img/voltmeter%20-%20Copy.jpg" style="display: none" id="img1">
+                <img src="img/ammeter%20-%20Copy.jpg" style="display: none" id="img2">
+                <img src="img/bulb.jpg" style="display: none" id="img3">
+                <img src="img/battery.png" style="display: none" id="img4">
+            </div>
+    </div>
+    <br><br>
+
+// table for data input and calculation
+<h4 >Table 1</h4><hr>
+<a style="background-color: #6a1b9a; border-radius: 5px;width: 70px;
+        height: 40px;color: white;cursor: pointer;font-size: 18px;padding:3px 10px 3px 10px;
+        margin: 0 0 0 600px" onclick="calc()">FETCH</a>
+<table width="100%" style="border: 3px solid gray;
+        border-collapse: collapse;">
+    <thead >
+    <tr>
+        <th rowspan="2" >S No.</th>
+
+        <th colspan="3">Current Increasing</th>
+        <th colspan="3">Current Decreasing</th>
+
+        <th rowspan="2">Mean R<sub>g</sub>/3.9</th>
+
+    </tr>
+    <tr>
+
+        <th>Voltage V volts</th>
+        <th>Current I amp.</th>
+        <th>R<sub>g</sub>=V/I ohms</th>
+        <th>Voltage V volts</th>
+        <th>Current I amp.</th>
+        <th>R<sub>g</sub>=V/I ohms</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th >1</th>
+        <td><input type="number" id="v1" ></td>
+        <td><input type="number" id="i1"  ></td>
+        <td id="r1"></td>
+        <td><input type="number" id="v2" ></td>
+        <td><input type="number" id="i2" ></td>
+        <td id="r2"></td>
+        <td id="rf"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td><input type="number" id="v12" ></td>
+        <td><input type="number" id="i12"  ></td>
+        <td id="r12"></td>
+        <td><input type="number" id="v22" ></td>
+        <td><input type="number" id="i22" ></td>
+        <td id="r22"></td>
+        <td id="rf2"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td><input type="number" id="v13" ></td>
+        <td><input type="number" id="i13"  ></td>
+        <td id="r13"></td>
+        <td><input type="number" id="v23" ></td>
+        <td><input type="number" id="i23" ></td>
+        <td id="r23"></td>
+        <td id="rf3"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td><input type="number" id="v14" ></td>
+        <td><input type="number" id="i14"  ></td>
+        <td id="r14"></td>
+        <td><input type="number" id="v24" ></td>
+        <td><input type="number" id="i24" ></td>
+        <td id="r24"></td>
+        <td id="rf4"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td><input type="number" id="v15" ></td>
+        <td><input type="number" id="i15"  ></td>
+        <td id="r15"></td>
+        <td><input type="number" id="v25" ></td>
+        <td><input type="number" id="i25" ></td>
+        <td id="r25"></td>
+        <td id="rf5"></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td><input type="number" id="star1" ></td>
+        <td><input type="number" id="star2"  ></td>
+        <td id="star3"></td>
+        <td><input type="number" id="star4" ></td>
+        <td><input type="number" id="star5" ></td>
+        <td id="star6"></td>
+        <td id="star7"></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td><input type="number" id="ram1" ></td>
+        <td><input type="number" id="ram2"  ></td>
+        <td id="ram3"></td>
+        <td><input type="number" id="ram4" ></td>
+        <td><input type="number" id="ram5" ></td>
+        <td id="ram6"></td>
+        <td id="ram7"></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td><input type="number" id="pan1" ></td>
+        <td><input type="number" id="pan2"  ></td>
+        <td id="pan3"></td>
+        <td><input type="number" id="pan4" ></td>
+        <td><input type="number" id="pan5" ></td>
+        <td id="pan6"></td>
+        <td id="pan7"></td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td><input type="number" id="train1" ></td>
+        <td><input type="number" id="train2"  ></td>
+        <td id="train3"></td>
+        <td><input type="number" id="train4" ></td>
+        <td><input type="number" id="train5" ></td>
+        <td id="train6"></td>
+        <td id="train7"></td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td><input type="number" id="bus1" ></td>
+        <td><input type="number" id="bus2"  ></td>
+        <td id="bus3"></td>
+        <td><input type="number" id="bus4" ></td>
+        <td><input type="number" id="bus5" ></td>
+        <td id="bus6"></td>
+        <td id="bus7"></td>
+    </tr>
+
+
+    <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="font-bold" id="meanr0">Mean R<sub>0</sub>=</td>
+    </tr>
+    </tbody>
+</table>
+
+<br><hr><br>
+
+// table 2 for calculation of logP and logT
+
+<h4 class="font-bold">Table 2: Determination of Power P for different temperature T:</h4>
+<p>To copy value of V and I from Table1 to Table2
+    <a style="background-color: #6a1b9a; border-radius: 5px;width: 70px;
+        height: 40px;color: white;cursor: pointer;font-size: 18px;padding:3px 10px 3px 10px;
+       " onclick="table2()">click</a>
+</p>
+
+
+<table width="100% " style="border: 3px solid gray;
+        border-collapse: collapse;">
+    <thead >
+    <tr>
+        <th>S No.</th>
+        <th>Voltage V volts</th>
+        <th>Current I amp.</th>
+        <th>R<sub>t</sub>=V/I ohms</th>
+        <th>R<sub>t</sub>/R<sub>0</sub></th>
+        <th>Temperature corresponding to R<sub>t</sub>/R<sub>0</sub></th>
+        <th>Log<sub>10</sub>T</th>
+        <th>Power P=VI volts</th>
+        <th>Log<sub>10</sub>P</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td><input type="number" id="start1"></td>
+        <td><input type="number" id="start2"></td>
+        <td id="start3"></td>
+        <td id="start4"></td>
+        <td id="start5"></td>
+        <td id="start6"></td>
+        <td id="start7"></td>
+        <td id="start8"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td><input type="number" id="go1"></td>
+        <td><input type="number" id="go2"></td>
+        <td id="go3"></td>
+        <td id="go4"></td>
+        <td id="go5"></td>
+        <td id="go6"></td>
+        <td id="go7"></td>
+        <td id="go8"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td><input type="number" id="up1"></td>
+        <td><input type="number" id="up2"></td>
+        <td id="up3"></td>
+        <td id="up4"></td>
+        <td id="up5"></td>
+        <td id="up6"></td>
+        <td id="up7"></td>
+        <td id="up8"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td><input type="number" id="now1"></td>
+        <td><input type="number" id="now2"></td>
+        <td id="now3"></td>
+        <td id="now4"></td>
+        <td id="now5"></td>
+        <td id="now6"></td>
+        <td id="now7"></td>
+        <td id="now8"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td><input type="number" id="how1"></td>
+        <td><input type="number" id="how2"></td>
+        <td id="how3"></td>
+        <td id="how4"></td>
+        <td id="how5"></td>
+        <td id="how6"></td>
+        <td id="how7"></td>
+        <td id="how8"></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td><input type="number" id="shift1"></td>
+        <td><input type="number" id="shift2"></td>
+        <td id="shift3"></td>
+        <td id="shift4"></td>
+        <td id="shift5"></td>
+        <td id="shift6"></td>
+        <td id="shift7"></td>
+        <td id="shift8"></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td><input type="number" id="sad1"></td>
+        <td><input type="number" id="sad2"></td>
+        <td id="sad3"></td>
+        <td id="sad4"></td>
+        <td id="sad5"></td>
+        <td id="sad6"></td>
+        <td id="sad7"></td>
+        <td id="sad8"></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td><input type="number" id="take1"></td>
+        <td><input type="number" id="take2"></td>
+        <td id="take3"></td>
+        <td id="take4"></td>
+        <td id="take5"></td>
+        <td id="take6"></td>
+        <td id="take7"></td>
+        <td id="take8"></td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td><input type="number" id="low1"></td>
+        <td><input type="number" id="low2"></td>
+        <td id="low3"></td>
+        <td id="low4"></td>
+        <td id="low5"></td>
+        <td id="low6"></td>
+        <td id="low7"></td>
+        <td id="low8"></td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td><input type="number" id="high1"></td>
+        <td><input type="number" id="high2"></td>
+        <td id="high3"></td>
+        <td id="high4"></td>
+        <td id="high5"></td>
+        <td id="high6"></td>
+        <td id="high7"></td>
+        <td id="high8"></td>
+    </tr>
+
+    </tbody>
+</table>
+<div>
+
+    <table style="width:100%">
+        <tr>
+            <td>
+                <div id="l1" style="width:600px;height:500px"></div>
+            </td>
+            <td>
+                <div id="l2" style="width:600px;height:500px"></div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="button" onclick="draw();" value="draw garph 1" />
+    <input type="button" onclick="draw1();" value="draw garph 2" />
+
+    <h3 style="text-align: center">For Finding the Slope</h3>
+    <input type="text" id="t1" style="width: 250px" placeholder="Enter first Coordinate(x,y)">
+    <input type="text" id="t2" style="width: 250px" placeholder="Enter Second Coordinate(x,y)">
+    <input type="button" value="Slope" onclick="slopy();"/>
+    <input type="text" id="t3" style="width: 250px">
+
+</div>
+
+<br><br><br>
+
+
+
+<script>
+    var canvas=document.getElementById("mycanvas");
+    var context=canvas.getContext("2d");
+    var i;
+
+    // cannvas disign and development
+    function mouseevt(x,y) {
+        var image;
+        if (i == 1) {
+            image = document.getElementById("img1");
+            context.drawImage(image, 120,100);
+        }
+        else if (i == 2) {
+            image = document.getElementById("img2");
+            context.drawImage(image, 300,120);
+        }
+        else if (i == 3) {
+            image = document.getElementById("img3");
+            context.drawImage(image, 130,20);
+        }
+        else if (i == 4) {
+            image = document.getElementById("img4");
+            context.drawImage(image, 150, 185);
+        }
+
+        else if(i==5){
+
+            context.beginPath();
+            context.moveTo(120, 130);
+            context.lineTo(70, 130);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(70,130);
+            context.lineTo(70,55);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(70,55);
+            context.lineTo(140,55);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(143,55);
+            context.lineTo(203,55);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(203,55);
+            context.lineTo(203,130);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(203,130);
+            context.lineTo(180,130);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            //kjdkjwhkdjhwjh
+        }
+        else if(i==6){
+            context.beginPath();
+            context.moveTo(203,90);
+            context.lineTo(330,90);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(330,90);
+            context.lineTo(330,120);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(330,184);
+            context.lineTo(330,215);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(330,215);
+            context.lineTo(195,215);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(157,215);
+            context.lineTo(30,215);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(30,215);
+            context.lineTo(30,92);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(30,92);
+            context.lineTo(70,92);
+            context.strokeStyle = "black";
+            context.lineWidth = 3;
+            context.stroke();
+        }
+    }
+
+
+    function main1() {
+        i = 1;
+    }
+
+    function main2() {
+        i = 2;
+    }
+
+    function main3() {
+        i = 3;
+    }
+    function main4() {
+        i=4;
+    }
+    function main5() {
+        i=5;
+    }
+    function main6() {
+        i=6;
+    }
+
+    $(window).load(function () {
+        $(".trigger_popup_fricc").click(function(){
+            $('.hover_bkgr_fricc').show();
+        });
+        $('.hover_bkgr_fricc').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+    });
+
+//-------------------
+    // drawing the graph....
+    //var datapoints1 = [];
+    var datapoints2 = [];
+    for (i = 3; i <= 11; i++) {
+        // datapoints1.push({ x: Math.log(i), y: Math.log(i) });
+        datapoints2.push({y: i, x: -2.613 * i * i + 85.78 * i + 43.48});
+    }
+
+    //drawgraph("l1", datapoints1, "LogP", "LogT");
+
+    function draw1() {
+        drawgraph("l2", datapoints2, "Temp", "Rt/Ro");
+    }
+
+    //function for slope calculation
+    function slopy() {
+        var x = document.getElementById("t1").value;
+        var i = x.indexOf(",");
+        var real1 = parseFloat(x.substring(x, i));
+        var img1 = parseFloat(x.substring(i + 1, x.length));
+
+        var y = document.getElementById("t2").value;
+        var j = y.indexOf(",");
+        var real2 = parseFloat(y.substring(y, j));
+        var img2 = parseFloat(y.substring(j + 1, y.length));
+        var real = real2 - real1;
+        var img = img2 - img1;
+        var slope = img / real;
+        document.getElementById("t3").value = slope;
+    }
+
+</script>
+<script src="js/stefansimulate_vik.js"></script>
+<script src="js/mouseevent.ob.js"></script>
+</body>
+</html>

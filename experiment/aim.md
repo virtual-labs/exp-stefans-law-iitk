@@ -1,1 +1,1 @@
-### Aim of the experiment
+To Verify Stefan’s law 
