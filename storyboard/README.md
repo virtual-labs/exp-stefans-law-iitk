@@ -85,8 +85,8 @@ Log T and Log P values will be calculated and then a plot between Log P(on y axi
  
 
 ### 5. Storyboard :
-<img src="images/story1.png"/><br>
-<img src="images/story2.png"/><br>
-<img src="images/story3.png"/><br>
-<img src="images/story4.png"/><br>
-<img src="images/story5.png"/>
+<img src="storyboard/story1.png"/><br>
+<img src="storyboard/story2.png"/><br>
+<img src="storyboard/story3.png"/><br>
+<img src="storyboard/story4.png"/><br>
+<img src="storyboard/story5.png"/>
