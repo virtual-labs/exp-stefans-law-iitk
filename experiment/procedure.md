@@ -1,16 +1,12 @@
-For black bodies, Stefan’s law is 
-E = σ (T<sup>4</sup>-T<sub>0</sub><sup>4</sup>) 						(1)
-Where E is the net amount of radiation emitted per second per unit area by a body at temperature T and surrounded by another body at temperature T0. σ is called Stefan’s constant. A similar relation can also hold for bodies that are not black. In such case, we can write
-P = C (T<sup>α</sup> -T<sub>0</sub><sup>α</sup>) 					(2)
-Where, P is the total power emitted by a body at temperature T surrounded by another at temperature T0, α is a power quite closed to 4 and C is some constant depending on the material and area of such a body. Further the relation can be put as 
-P = C Tα (1-T<sub>0</sub><sup>α</sup>/ T<sup>α</sup>) 					(3)
-
-If T>> T<sub>0</sub> (e.g., T = 1500K, and T<sub>0</sub> ≈ 300K), we can write
-
-P = C T<sub>α</sub>						(4)
-
-Or
-
-Log<sub>10</sub>P = αLog<sub>10</sub>T + Log<sub>10</sub>C 				     (5)
-
-The graph between Log<sub>10</sub>P and Log<sub>10</sub>T should be a straight line whose slope gives α.  
+1.Make connections to complete the circuit.<br>
+2.Slide the power to ON mode.<br>
+3.Increase the voltage from 0 V with an increase of 0.5 V till 9.5V.<br>
+4.Measure the corresponding current in ammeter.<br>
+5.Fetch the values of current and voltage in Table 1 after every step.<br>
+6.Take 10 observations.<br>
+7.Decrease the voltage from 10.0 V with a decrease of 0.5 V till 1.0 V.<br>
+8.Fetch these values of current and voltage in Table 1.<br>
+9.Take observations from Table 1 and place them in Table 2 by the Fetch button.<br>
+10.Values of LogP and LogT will be calculated.<br>
+11.Plot graph between LogP and Log T by plot data button.<br>
+12.Calculate the slope of the graph
