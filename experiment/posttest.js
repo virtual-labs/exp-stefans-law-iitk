@@ -97,7 +97,7 @@
         c: "0.6A",                  ///// Write the option 3 inside double quotes
         d: "0.8A"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
     },
 
     {
@@ -112,17 +112,27 @@
     },   
     
      {
-      question: "Keeping Temperature constant how the rate of energy emission from any body depends on increasing its surface area?",  ///// Write the question inside double quotes
+      question: "At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?",  ///// Write the question inside double quotes
       answers: {
-        a: "Increases",                  ///// Write the option 1 inside double quotes
-        b: "decreases",                  ///// Write the option 2 inside double quotes
-        c: "remains constant",                  ///// Write the option 3 inside double quotes
-        d: "none of these"                   ///// Write the option 4 inside double quotes
+        a: "400K",                  ///// Write the option 1 inside double quotes
+        b: "460K",                  ///// Write the option 2 inside double quotes
+        c: "470K",                  ///// Write the option 3 inside double quotes
+        d: "474K"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },///// To add more questions, copy the section below 
     									                  ///// this line
-
+   {
+      question: "Value of Rt/R 0 for 400 K lies on which range?",  ///// Write the question inside double quotes
+      answers: {
+        a: "1-2",                  ///// Write the option 1 inside double quotes
+        b: "3-4",                  ///// Write the option 2 inside double quotes
+        c: "5-6",                  ///// Write the option 3 inside double quotes
+        d: "7-8"                   ///// Write the option 4 inside double quotes
+      },
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },///// To add more questions, copy the section below 
+    									                  ///// this line
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
         till closing curly braces comma ( }, )
