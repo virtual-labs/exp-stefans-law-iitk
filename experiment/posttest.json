@@ -1,1 +1,37 @@
-[{"question":"The value of the current in the filament at T=800 K when applied potential difference is 5V:","answers":{"a":"0.2 A","b":"0.4 A","c":"0.6A","d":"0.8A"},"correctAnswer":"c"},{"question":"Resistance of any conductor _______________ with increase in temperature","answers":{"a":"Increases","b":"decreases","c":"remains constant","d":"none of these"},"correctAnswer":"a"},{"question":"At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?","answers":{"a":"400K","b":"464K","c":"470K","d":"474K"},"correctAnswer":"b"},{"question":"Value of Rt/R 0 for 400 K lies on which range?","answers":{"a":"1-2","b":"3-4","c":"5-6","d":"7-8"},"correctAnswer":"c"}]
+[{
+	"question": "The value of the current in the filament at T=800 K when applied potential difference is 5V:",
+	"answers": {
+		"a": "0.2 A",
+		"b": "0.4 A",
+		"c": "0.6A",
+		"d": "0.8A"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "Resistance of any conductor _______________ with increase in temperature",
+	"answers": {
+		"a": "Increases",
+		"b": "decreases",
+		"c": "remains constant",
+		"d": "none of these"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?",
+	"answers": {
+		"a": "400K",
+		"b": "464K",
+		"c": "470K",
+		"d": "474K"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Value of Rt/R 0 for 400 K lies on which range?",
+	"answers": {
+		"a": "1-2",
+		"b": "3-4",
+		"c": "5-6",
+		"d": "7-8"
+	},
+	"correctAnswer": "c"
+}]
