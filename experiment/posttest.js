@@ -89,21 +89,55 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1. The value of the current in the filament at T=800 K when applied potential difference is 5V:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "0.2 A", ///// Write the option 1 inside double quotes
+                b: "0.4 A", ///// Write the option 2 inside double quotes
+                c: "0.6A", ///// Write the option 2 inside double quotes
+                d: "0.8A", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "c" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2. Resistance of any conductor _______________ with increase in temperature",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
+        a: "Increases",                  ///// Write the option 1 inside double quotes
+        b: "decreases",                  ///// Write the option 2 inside double quotes
+        c: "remains constant",
+        d: "none of these",
+      },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    },
+                         {
+      question: "At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?",  ///// Write the question inside double quotes
+      answers: {
+        a: "400K",                  ///// Write the option 1 inside double quotes
+        b: "464K",                  ///// Write the option 2 inside double quotes
+        c: "470K",
+        d: "474K",
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
+                         {
+      question: "Value of R<sup>t</sup>/R<sup>0</sup> for 400 K lies on which range?",  ///// Write the question inside double quotes
+      answers: {
+        a: "1-2",                  ///// Write the option 1 inside double quotes
+        b: "3-4",                  ///// Write the option 2 inside double quotes
+        c: "5-6",
+        d: "7-8",
+      },
       correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },
+                         {
+      question: "Keeping Temperature constant how the rate of energy emission from anybody depends on increasing its surface area? ",  ///// Write the question inside double quotes
+      answers: {
+        a: "Increases",                  ///// Write the option 1 inside double quotes
+        b: "decreases",                  ///// Write the option 2 inside double quotes
+        c: "remains constant",
+        d: "none of these",
+      },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
 
