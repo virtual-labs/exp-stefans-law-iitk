@@ -12,17 +12,17 @@
 
 Type here: berif description of this experiment
 
-<b>Name of Developer | <b> Dr. Ashutosh Tiwari
+<b>Name of Developer | <b> Prof. Kantesh Balani
 :--|:--|
-<b> Institute | <b> Rajkiya Engineering College, Banda
-<b> Email id|     <b> ashutosh.tiwari0885@gmail.com
-<b> Department | Applied Science & Humanities
+<b> Institute | <b> IIT Kanpur
+<b> Email id|     <b> kbalani@iitk.ac.in
+<b> Department | MSE
 
 #### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Prof. Kantesh Balani | Faculty | MSE | IIT Kanpur, Kanpur | kbalani@iitk.ac.in
+1 | Dr. Ashutosh Tiwari | Faculty | Physics | REC Banda | ashutosh.tiwari@recbanda.ac.in
 2 | Abhay Gupta | Student | Information Technology | REC, Banda |abhaypc26@gmail.com
 3 | Praphull Maurya | Student | Information Technology | REC, Banda |praphullmaurya123@gmail.com
 4 | Satish Kumar | Student | Electrical Technology | REC, Banda |satishkumar7991@gmail.com
