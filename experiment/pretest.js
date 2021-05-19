@@ -89,23 +89,53 @@
 
 
      const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1. The plot of Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings will be:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "Straight line", ///// Write the option 1 inside double quotes
+                b: "parabolic", ///// Write the option 2 inside double quotes
+                c: "hyperbolic", ///// Write the option 2 inside double quotes
+                d: "elliptical", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2. The slope of the standard plot between Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings is",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "4.2",                  ///// Write the option 1 inside double quotes
+        b: "4.0",                  ///// Write the option 2 inside double quotes
+        c: "4.8", 
+        d: "5.0",  },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
+           {
+      question: "3. If the power radiated from any source gets doubled then its absolute temperature will have been raised by",  ///// Write the question inside double quotes
+      answers: {
+        a: "2 times",                  ///// Write the option 1 inside double quotes
+        b: "Less than 2 times",                  ///// Write the option 2 inside double quotes
+        c: "Greater than 2 times", 
+        d: "None of these",  },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
+                           {
+      question: "4. If the absolute temperature of anybody be raised to twice its value then by what amount its power radiated will be raised",  ///// Write the question inside double quotes
+      answers: {
+        a: "2 times",                  ///// Write the option 1 inside double quotes
+        b: "4 times",                  ///// Write the option 2 inside double quotes
+        c: "8 times",
+        d: "16 times",},
+      correctAnswer: "d"                ///// Write the correct option inside double quotes
+    },
+                           {
+      question: "5. Relation between rate of Energy Emission from any blackbody with its absolute Temperature according to Stefan’s Law is:",  ///// Write the question inside double quotes
+      answers: {
+        a: "E∝T<sup>3</sup> ",                  ///// Write the option 1 inside double quotes
+        b: "E∝T<sup>2</sup>",                  ///// Write the option 2 inside double quotes
+        c: "E∝T<sup>4</sup>",
+        d: "E∝T<sup>5</sup>",},
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },
 
 
      ];
