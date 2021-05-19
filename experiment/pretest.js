@@ -90,7 +90,7 @@
 
   const myQuestions = [
     {
-      question: "The plot of Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings will be:",  ///// Write the question inside double quotes
+      question: "1. The plot of Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings will be:",  ///// Write the question inside double quotes
       answers: {
         a: "Straight line",                  ///// Write the option 1 inside double quotes
         b: "parabolic",                  ///// Write the option 2 inside double quotes
@@ -101,7 +101,7 @@
     },
 
     {
-     question: "The slope of the standard plot between Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings is",  ///// Write the question inside double quotes
+     question: "2. The slope of the standard plot between Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings is",  ///// Write the question inside double quotes
       answers: {
         a: "4.2",                  ///// Write the option 1 inside double quotes
         b: "4.0",                  ///// Write the option 2 inside double quotes
@@ -109,10 +109,9 @@
         d: "5.0"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
-    },                                  ///// To add more questions, copy the section below 
-    									                  ///// this line
-{
-     question: "If the power radiated from any source gets doubled then its absolute temperature will have been raised by",  ///// Write the question inside double quotes
+    },       
+    {
+     question: "3. If the power radiated from any source gets doubled then its absolute temperature will have been raised by",  ///// Write the question inside double quotes
       answers: {
         a: "2 times",                  ///// Write the option 1 inside double quotes
         b: "Less than 2 times",                  ///// Write the option 2 inside double quotes
@@ -123,7 +122,7 @@
     }, ///// To add more questions, copy the section below 
     									                  ///// this line
 {
-     question: "If the absolute temperature of anybody be raised to twice its value then by what amount its power radiated will be raised",  ///// Write the question inside double quotes
+     question: "4. If the absolute temperature of anybody be raised to twice its value then by what amount its power radiated will be raised",  ///// Write the question inside double quotes
       answers: {
         a: "2 times",                  ///// Write the option 1 inside double quotes
         b: "4 times",                  ///// Write the option 2 inside double quotes
@@ -131,6 +130,15 @@
         d: "16 times"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "d"                ///// Write the correct option inside double quotes
+    }, {
+     question: "5. Relation between rate of Energy Emission from any blackbody with its absolute Temperature according to Stefan’s Law is:",  ///// Write the question inside double quotes
+      answers: {
+        a: "E∝T<sup>3</sup>",                  ///// Write the option 1 inside double quotes
+        b: "E∝T<sup>3</sup>",                  ///// Write the option 2 inside double quotes
+        c: "E∝T<sup>3</sup>",                  ///// Write the option 3 inside double quotes
+        d: "E∝T<sup>3</sup>"                   ///// Write the option 4 inside double quotes
+      },
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
     }, 
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
