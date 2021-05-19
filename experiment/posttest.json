@@ -1,5 +1,5 @@
 [{
-	"question": "The value of the current in the filament at T=800 K when applied potential difference is 5V:",
+	"question": "1. The value of the current in the filament at T=800 K when applied potential difference is 5V:",
 	"answers": {
 		"a": "0.2 A",
 		"b": "0.4 A",
@@ -8,7 +8,7 @@
 	},
 	"correctAnswer": "c"
 }, {
-	"question": "Resistance of any conductor _______________ with increase in temperature",
+	"question": "2. Resistance of any conductor _______________ with increase in temperature",
 	"answers": {
 		"a": "Increases",
 		"b": "decreases",
@@ -17,7 +17,7 @@
 	},
 	"correctAnswer": "a"
 }, {
-	"question": "At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?",
+	"question": "3. At what temperature of the filament the resistance of the filament becomes 6 times of its value at 0K?",
 	"answers": {
 		"a": "400K",
 		"b": "464K",
@@ -26,7 +26,7 @@
 	},
 	"correctAnswer": "b"
 }, {
-	"question": "Value of Rt/R 0 for 400 K lies on which range?",
+	"question": "4. Value of Rt/R 0 for 400 K lies on which range?",
 	"answers": {
 		"a": "1-2",
 		"b": "3-4",
@@ -34,4 +34,14 @@
 		"d": "7-8"
 	},
 	"correctAnswer": "c"
+},
+{
+	"question": "5. Keeping Temperature constant how the rate of energy emission from anybody depends on increasing its surface area? ",
+	"answers": {
+		"a": "Increases",
+		"b": "decreases",
+		"c": "remains constant",
+		"d": "none of these"
+	},
+	"correctAnswer": "a"
 }]
