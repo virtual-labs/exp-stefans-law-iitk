@@ -1,32 +1,14 @@
 ## <b> Pre-test
 #### Please attempt the following questions
 
-1) Interference occurs due to _______ of the light.<br>
-<b>a) Wave nature<br></b>
-b) particle nature<br>
-c) both a and b<br>
-d) none of these<br>
+1. The plot of Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings will be:<br>
+a) Straight line<br>		b) parabolic	<br>	c) hyperbolic	<br>	d) elliptical<br>
+2. The slope of the standard plot between Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings is<br>
+a) 4.2		<br>	b) 4.0	<br>		c) 4.8	<br>		d) 5.0	<br>
+3. If the power radiated from any source gets doubled then its absolute temperature will have been raised by<br>
+a) 2 times	<br>	b) Less than 2 times	<br>c) Greater than 2 times<br>	d) None of these<br>
+4. If the absolute temperature of anybody be raised to twice its value then by what amount its power radiated will be raised<br>
+a) 2 times	<br>	b)  4 times<br>		c) 8 times<br>		d) 16 times<br>
+5. Relation between rate of Energy Emission from any blackbody with its absolute Temperature according to Stefan’s Law is:<br>
+a) E∝T<sup>3</sup>    <br>     	b) E∝T<sup>2</sup>	    <br>       c) E∝T<sup>4</sup>	<br> d) E∝T<sup>5</sup>
 
-2) Superposition of crest over crest results in __________ .<br>
-a) Destructive interference<br>
-<b> b) Constructive interference<br></b>
-c) Diffraction<br>
-d) Polarization<br>
-
-3) If two waves with amplitude (y1) and (y2) travelling in the same medium reach at a point in the medium, then the resultant displacement at that point in the medium, will be given by __________ .<br>
-a) y1 -y2<br>
-<b>b) y1 + y2<br></b>
-c) y1 / y2<br>
-d) y1 * y2<br>
-
-4) The condition for destructive interference is: the path difference should be equal to __________. <br>
-<b>a) Odd integral multiple of wavelength<br></b>
-b) Integral multiple of wavelength<br>
-c) Odd integral multiple of half wavelength<br>
-d) Integral multiple of half wavelength<br>
-
-5) In Newton's ring experiment, the diameter of the dark rings is proportional to __________ .<br>
-a) Odd natural numbers<br>
-b) Even natural numbers<br>
-c) Complex numbers<br>
-<b>d) square root of natural numbers<br></b>
