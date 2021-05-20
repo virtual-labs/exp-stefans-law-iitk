@@ -26,7 +26,7 @@
 	},
 	"correctAnswer": "b"
 }, {
-	"question": "Value of Rt/R 0 for 400 K lies on which range?",
+	"question": "4. Value of Rt/R 0 for 400 K lies on which range?",
 	"answers": {
 		"a": "1-2",
 		"b": "3-4",
@@ -35,7 +35,7 @@
 	},
 	"correctAnswer": "c"
 },{
-	"question": "Keeping Temperature constant how the rate of energy emission from anybody depends on increasing its surface area? ",
+	"question": "5. Keeping Temperature constant how the rate of energy emission from anybody depends on increasing its surface area? ",
 	"answers": {
 		"a": "Increases",
 		"b": "decreases",
