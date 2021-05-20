@@ -20,4 +20,3 @@ R<sub>t</sub>    is the resistance of the filament at T (=t <sup>0</sup>C+273) K
 α is the temperature coefficient of the resistance of the filament <br>
 T is the temperature of the filament in K and <br>
 T<sub>0</sub> is the temperature of the filament at 0 K
-

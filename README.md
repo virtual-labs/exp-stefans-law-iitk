@@ -6,7 +6,12 @@
 <b>Discipline | <b>Physical Sciences
 :--|:--|
 <b> Lab | <b> Basics of Physics
+<<<<<<< HEAD
 <b> Experiment|     <b> 3. Radiation with Temperature Change Using Stefan’s Law
+=======
+
+<b> Experiment|     <b> 3.Radiation with Temperature Change Using Stefan’s Law
+>>>>>>> 5fea3eaa20af05b8ae937e37875ddf4ff2b945f4
 
 <h5> About the Experiment : </h5> <br>
 
@@ -16,7 +21,12 @@ Type here: berif description of this experiment
 :--|:--|
 <b> Institute | <b> IIT Kanpur
 <b> Email id|     <b> kbalani@iitk.ac.in
+<<<<<<< HEAD
 <b> Department | Physics
+=======
+
+<b> Department | MSE
+>>>>>>> 5fea3eaa20af05b8ae937e37875ddf4ff2b945f4
 
 #### Contributors List
 
