@@ -1,0 +1,48 @@
+[{
+	"question": "1. The plot of Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings will be:",
+	"answers": {
+		"a": "Straight line",
+		"b": "parabolic",
+		"c": "hyperbolic",
+		"d": "elliptical"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2. The slope of the standard plot between Log P Vs log T for anybody is at a temperature larger than the temperature of the surroundings is",
+	"answers": {
+		"a": "4.2",
+		"b": "4.0",
+		"c": "4.8",
+		"d": "5.0"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "3. If the power radiated from any source gets doubled then its absolute temperature will have been raised by",
+	"answers": {
+		"a": "2 times",
+		"b": "Less than 2 times",
+		"c": "Greater than 2 times",
+		"d": "None of these"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "4. If the absolute temperature of anybody be raised to twice its value then by what amount its power radiated will be raised",
+	"answers": {
+		"a": "2 times",
+		"b": "4 times",
+		"c": "8 times",
+		"d": "16 times"
+	},
+	"correctAnswer": "d"
+},{
+	"question": "5. Relation between rate of Energy Emission from any blackbody with its absolute Temperature according to Stefan’s Law is:",
+	"answers": {
+		"a": "E∝T<sup>3</sup> ",
+		"b": "E∝T<sup>2</sup>",
+		"c": "E∝T<sup>4</sup>",
+		"d": "E∝T<sup>5</sup>"
+	},
+	"correctAnswer": "c"
+}
+]
+
