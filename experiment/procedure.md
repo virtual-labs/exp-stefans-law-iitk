@@ -10,3 +10,4 @@
 10.Values of LogP and LogT will be calculated.<br>
 11.Plot graph between LogP and Log T by plot data button.<br>
 12.Calculate the slope of the graph
+

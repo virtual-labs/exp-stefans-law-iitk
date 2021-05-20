@@ -34,14 +34,15 @@
 		"d": "16 times"
 	},
 	"correctAnswer": "d"
-},
-{
+},{
 	"question": "5. Relation between rate of Energy Emission from any blackbody with its absolute Temperature according to Stefan’s Law is:",
 	"answers": {
-		"a": "E∝T<sup>3</sup>",
-		"b": "E∝T<sup>3</sup>",
-		"c": "E∝T<sup>3</sup>",
-		"d": "E∝T<sup>3</sup>",
+		"a": "E∝T<sup>3</sup> ",
+		"b": "E∝T<sup>2</sup>",
+		"c": "E∝T<sup>4</sup>",
+		"d": "E∝T<sup>5</sup>"
 	},
 	"correctAnswer": "c"
-}]
+}
+]
+

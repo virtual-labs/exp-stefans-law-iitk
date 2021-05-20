@@ -34,8 +34,8 @@
 		"d": "7-8"
 	},
 	"correctAnswer": "c"
-},
-{
+
+},{
 	"question": "5. Keeping Temperature constant how the rate of energy emission from anybody depends on increasing its surface area? ",
 	"answers": {
 		"a": "Increases",
@@ -44,4 +44,6 @@
 		"d": "none of these"
 	},
 	"correctAnswer": "a"
-}]
+}
+]
+
